@@ -166,16 +166,17 @@ margin-top:8px;
   overflow: hidden;
 }
 
-/* hiệu ứng ánh sáng chạy nhẹ */
+/* ánh sáng chạy */
 .btn::after{
-  content:"";
-  position:absolute;
-  top:0;
-  left:-100%;
-  width:100%;
-  height:100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
   background: rgba(255,255,255,0.25);
   transform: skewX(-25deg);
+  transition: left 0.6s ease;
 }
 
 .btn:hover{
@@ -184,13 +185,11 @@ margin-top:8px;
 }
 
 .btn:hover::after{
-  left: 120%;
-  transition: 0.6s ease;
+  left: 150%;
 }
 
 .btn:active{
-  transform: scale(0.98);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: scale(0.97);
 }
 /* CONTACT */
 .contact{
@@ -394,22 +393,7 @@ Mỗi ly cà phê là một khoảnh khắc chậm lại giữa cuộc sống v�
 </div>
 
 </section>
- .btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 28px;
-background:#c58b45;
-color:white;
-border:none;
-border-radius:40px;
-text-decoration:none;
-cursor:pointer;
-transition:.3s;
-}
 
-.btn:hover{
-transform:scale(1.05);
-}
 <!-- CONTACT -->
 <section id="contact">
 
